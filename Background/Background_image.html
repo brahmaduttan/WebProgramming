@@ -1,0 +1,19 @@
+<html>
+<script>
+function transform()
+{
+    document.getElementById("box").style.backgroundImage = "url('1.jpeg')";
+    document.getElementById("box").style.backgroundPosition = "center center";
+}
+
+function transformBack()
+{
+    document.getElementById("box").style.backgroundImage = "url('3.jpg')";
+    document.getElementById("box").style.backgroundPosition = "center center";
+}
+
+</script>
+<body>
+<div style="background:url('2.jpg');height:400px;width:800px;background-position:center center;" onmouseover="transform()" onmouseout="transformBack()" id="box"></div>
+</body>
+</html>
