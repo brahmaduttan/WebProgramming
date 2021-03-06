@@ -1,0 +1,86 @@
+<html> 
+<head> 
+<title>Exam</title> 
+<script language="javascript"> 
+function exam(form) 
+{ 
+var i=0; 
+if(form.one[0].checked) 
+i=i+1; 
+if(form.two[1].checked) 
+i=i+1; 
+if(form.three[1].checked) 
+i=i+1; 
+if(form.four[1].checked) 
+i=i+1; 
+if(form.five[2].checked) 
+i=i+1;
+if (i==5)
+{
+    window.alert("Congratulations you got full marks "+"\n"+"Thank You Taking Online Exam! Your Score is: "+i); 
+}
+else
+    window.alert("Thank You Taking Online Exam! Your Score is: "+i); 
+} 
+</script> 
+</head> 
+<body bgcolor=white style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 
+<form onSubmit="exam(this)"> 
+<center><h2><blink>WELCOME TO ONLINE EXAM FORM</blink></h2></center> 
+<p> 
+<h2>1)If we want define style for an unique element, then which css selector will we use ?</h2> 
+<input type="radio" name="one" value="Id"> 
+<label>Id</label> 
+<input type="radio" name="one" value="Text"> 
+<label>Text</label> 
+<input type="radio" name="one" value="Class"> 
+<label>Class</label> 
+<input type="radio" name="one"value="Name"> 
+<label>Name</label> 
+</p> 
+<p> 
+<h2>2)Can we align a Block element by setting the left and right margins</h2> 
+<input type="radio" name="two" value="Yes,We can"> 
+<label>Yes,We can</label> 
+<input type="radio" name="two" value="Not Possible"> 
+<label>Not Possible</label> 
+</p> 
+<p> 
+<h2>3)If we want to show an Arrow as cursor, then which value we will use ?</h2> 
+<input type="radio" name="three" value="pointer"> 
+<label>pointer</label> 
+<input type="radio" name="three" value="default"> 
+<label>default</label> 
+<input type="radio" name="three" value="arrow"> 
+<label>arrow</label> 
+<input type="radio" name="three" value="arr"> 
+<label>arr</label> 
+</p> 
+<p> 
+<h2>4)Java does not support</h2> 
+<input type="radio" name="four" value="inheritance"> 
+<label>Inheritance</label> 
+<input type="radio" name="four" value="multiple inheritance"> 
+<label>Multilple inheritance</label> 
+<input type="radio" name="four" value="polymorphism"> 
+<label>Polymorphism</label> 
+<input type="radio" name="four" value="encryption"> 
+<label>Encryption</label> 
+</p> 
+<p> 
+<h2>5)Which CSS property is used to control the text size of an element ?</h2> 
+<input type="radio" name="five" value="font-style"> 
+<label>font-style</label> 
+<input type="radio" name="five" value="text-size"> 
+<label>text-size</label> 
+<input type="radio" name="five" value="font-size"> 
+<label>font-size</label> 
+<input type="radio" name="five" value="text-style"> 
+<label>text-style</label> 
+</p> 
+<p><center> 
+<input type="submit" value="Submit"> 
+<input type ="reset" value="Reset"> 
+</center></p> 
+</body> 
+</html> 
